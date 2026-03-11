@@ -1,0 +1,49 @@
+[package]
+name = "istherenet"
+version = "0.1.0"
+edition = "2021"
+description = "Your internet connection status at a glance"
+
+[lib]
+name = "istherenet"
+path = "src/istherenet.rs"
+
+[[bin]]
+name = "istherenet"
+path = "src/main.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+surge-ping = "0.8"
+notify = "7"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "chrono"] }
+tracing-appender = "0.2"
+dirs = "6"
+chrono = "0.4"
+color = { version = "0.3.2", features = ["serde"] }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+objc2 = "0.6"
+objc2-foundation = { version = "0.3", features = ["NSThread", "NSRunLoop", "NSString", "NSNotification", "NSObjCRuntime", "NSDate"] }
+objc2-app-kit = { version = "0.3", features = [
+    "NSApplication",
+    "NSWindow",
+    "NSScreen",
+    "NSView",
+    "NSColor",
+    "NSGraphics",
+    "NSPanel",
+    "NSRunningApplication",
+    "NSStatusBar",
+    "NSStatusItem",
+    "NSAnimationContext",
+    "NSResponder",
+] }
+block2 = "0.6"
+core-graphics = "0.24"
+
+[target.'cfg(target_os = "linux")'.dependencies]
+x11rb = { version = "0.13", features = ["randr"] }

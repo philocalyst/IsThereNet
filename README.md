@@ -1,25 +1,4 @@
-<p align="center">
-    <a href="https://files.lowtechguys.com/IsThereNet.zip"><img width="128" height="128" src="IsThereNet/Assets.xcassets/AppIcon.appiconset/mac256.png" style="filter: drop-shadow(0px 2px 4px rgba(80, 50, 6, 0.2));"></a>
-    <h1 align="center"><code style="text-shadow: 0px 3px 10px rgba(8, 0, 6, 0.35); font-size: 3rem; font-family: ui-monospace, Menlo, monospace; font-weight: 800; background: transparent; color: #4d3e56; padding: 0.2rem 0.2rem; border-radius: 6px">IsThereNet</code></h1>
-    <h4 align="center" style="padding: 0; margin: 0; font-family: ui-monospace, monospace;">Your internet connection status</h4>
-    <h4 align="center" style="padding: 0; margin: 0; font-family: ui-monospace, monospace;">at a glance</h4>
-</p>
-
-<p align="center">
-    <a href="https://files.lowtechguys.com/releases/IsThereNet.dmg">
-        <img width=300 src="https://files.alinpanaitiu.com/download-button-dark.svg">
-    </a>
-</p>
-
-## Installation
-
-- Download, unzip, move to `/Applications`
-- or `brew install --cask istherenet`
-
-
-## What does this do?
-
-IsThereNet watches for internet connection status changes and draws a colored line at the top of the screen to indicate the status.
+Watches for internet connection status changes and draws a colored line at the top of the screen to indicate the status.
 
 Colors:
 
