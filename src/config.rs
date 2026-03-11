@@ -1,4 +1,4 @@
-use color::palette::css::{GREEN, RED, YELLOW};
+use color::palette::css::{GREEN, LIGHT_GREEN, RED, YELLOW};
 use color::{AlphaColor, Srgb};
 use serde::{Deserialize, Serialize};
 use std::path::PathBuf;
@@ -103,7 +103,7 @@ pub struct ColorsConfig {
 impl Default for ColorsConfig {
     fn default() -> Self {
         Self {
-            connected: GREEN,
+            connected: LIGHT_GREEN,
             disconnected: RED,
             slow: YELLOW,
         }
